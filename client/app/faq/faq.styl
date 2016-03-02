@@ -1,0 +1,112 @@
+.faq-nav
+  background #00b05d
+  background linear-gradient(45deg, #162A72 0%, #1E659C 40%, #1FA7AB 100%)
+  background: -moz-linear-gradient(45deg, #162A72 0%, #1E659C 40%, #1FA7AB 100%)
+  background: -webkit-linear-gradient(45deg, #162A72 0%, #1E659C 40%, #1FA7AB 100%)
+  height 58px
+.faq-fluid
+  background-color #FFF
+.faq-container {
+  width: 70%;
+  min-height: 80vh;
+  margin: 0px auto;
+  @media screen and (max-width: 992px) {
+    width: 85%;
+  }
+}
+
+.faq-container {
+  color: #4B4B4B;
+  font-family: 'Proxima Nova';
+  padding-bottom: 100px;
+}
+.faq-container a {
+  cursor: pointer;
+  color: #4B4B4B;
+  text-decoration: none;
+}
+.faq-container section {
+  margin-bottom: 30px;  
+}
+.faq-container section h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 10px;
+  font-size: 25px;
+  line-height: 1.5;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+.faq-container section p, .faq-container section a {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.faq-container span {
+  letter-spacing: 0px;
+}
+
+.faq-container p {
+  font-weight: 200;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Styles for Accordion */
+.toggle:last-child {
+  border-bottom: 1px solid #dddddd;
+}
+.toggle .toggle-title {
+  position: relative;
+  display: block;
+  border-top: 1px solid #dddddd;
+  margin-bottom: 6px;
+}
+.toggle .toggle-title h3 {
+  font-size: 20px;
+  margin: 0px;
+  line-height: 1;
+  cursor: pointer;
+  font-weight: 200;
+}
+.toggle .toggle-inner {
+  padding: 7px 25px 10px 25px;
+  // display: none;
+  margin: -7px 0 6px;
+}
+.toggle .toggle-inner div {
+  max-width: 100%;
+}
+.toggle .toggle-title .title-name {
+  display: block;
+  padding: 25px 25px 14px;
+}
+.toggle .toggle-title a i {
+  font-size: 22px;
+  margin-right: 5px;
+}
+.toggle .toggle-title i {
+  position: absolute;
+  background: url("../assets/images/plus_minus.png") 0px -24px no-repeat;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 20px;
+  right: 0;
+}
+.toggle .toggle-title.faq-active i {
+  background: url("../assets/images/plus_minus.png") 0px 0px no-repeat;
+}
+
+.pricing-page-text
+  padding-top 30px
+  background-color #F0F1F2
+  text-align center
+  font-size 2.3em
+  .title-purchase-text
+    margin-bottom 0px
+  .subtitle-purchase-text
+    font-size 0.5em
+    opacity 0.65

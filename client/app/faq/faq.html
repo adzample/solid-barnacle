@@ -1,0 +1,33 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+<div class="container-fluid faq-fluid">
+  <div class="row faq-nav">
+    
+  </div>
+  <div class="faq-container">
+    <section>
+      <h1>Frequently Asked Questions</h1>
+    </section>
+    <div ng-repeat='question in questions' ng-click="itemClicked($index)" class="toggle">
+      <div class="toggle-title" ng-class="{ 'faq-active': indicies[$index] == true }">
+        <h3>
+        <i></i>
+        <span class="title-name">{{ question.q }}</span>
+        </h3>
+      </div>
+      <div class="toggle-inner" ng-show='indicies[$index]'>
+        <p>{{ question.a }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row pricing-page-text">
+    <p class="title-purchase-text">
+      Build your store first, then pick a plan
+    </p>
+    <p class="subtitle-purchase-text">
+      Enjoy 14 days FREE on us! Cancel at anytime.
+    </p>
+    <div class="button-green-landing pricing-page-top-btn">
+      <button ng-click='showSignUp()'>Build Store Now, Free.</button>          
+    </div>
+  </div>
+</div>
