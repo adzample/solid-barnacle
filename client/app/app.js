@@ -6,7 +6,8 @@ angular.module('solidBarnacleApp', [
   'ngSanitize',
   'ui.router',
   'ui.bootstrap',
-  'ngAnimate'
+  'ngAnimate',
+  'smoothScroll'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider

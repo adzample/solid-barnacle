@@ -4,28 +4,24 @@ angular.module('solidBarnacleApp')
   .controller('FaqCtrl', function ($scope) {
     $scope.questions = [
       {
-        'q': 'How Long is the Free Trial?',
-        'a': 'The Free Trial is 14 days long and allows you to cancel at any time. You will not be charged for your first 14 days.'
+        'q': 'Why do we need to give our email?',
+        'a': 'This is the way we will provide you with access to your free questions. Also, as we are a new business, we can update you when more offers become available.'
       },
       {
-        'q': 'How do I accept my customers payments?',
-        'a': 'We have partnered with stripe to offer you the easiest, most secure payment method for your customers. Its very fast to sign up and integrates with our platform. You can track & modify all your customers orders from the stripe dashboard and within our own application.'
+        'q': 'How do I know payments are secure?',
+        'a': 'All our payments are handled by Stripe, an extremely secure payment processor that handles payments for hundreds of thousands of businesses. Lyft, Kickstarter and Shopify are a few of the companies that trust Stripe.'
       }, 
       {
-        'q': 'How do I get paid?',
-        'a': 'Once your customer pays your money will immediately show up in your stripe account. You will be able to withdraw this as per Stripes T&C\'s but generally it is a very short period of time until the money is cleared.'
+        'q': 'What if I am unhappy with the product?',
+        'a': 'We highly doubt this, but it does happen. We offer free questions in a very similar format to our paid options. We ask you to judge the quality and relevance of the questions before making a purchase decision (We are very sure you will be satisfied with the paid options). Due to the nature of the product we do not offer money back on our products. However, if you have any serious concerns do not hesitate to contact us.'
       },
       {
-        'q': 'What should I sell?',
-        'a': 'Althought we would love to, we can\'t tell you exactly what to sell.. but we are writing a great guide based upon our crazy experiences using one page stores. ShopYak is so simple to set up and start selling that we recommend trying your hand at multiple products.'
+        'q': 'What does the offer “Limited email help” stand for?',
+        'a': 'Our standard offer comes with up to 5 email help queries. We have a genuine interest in helping you pass your exam. After 5 queries you have the option to upgrade to more email support (plus a huge increase in question count) with platinum.'
       },       
       {
-        'q': 'Can I use my own domain?',
-        'a': 'Of course! Our paid plans allow you to add your own custom domain to your store. We have found that stores with their own domain often sell a much higher volume than those on our subdomain. We purchase and link your chosen domain to your store automatically.'
-      },
-      {
-        'q': 'Can I sell subscription based products?',
-        'a': 'Yes! You can sell both single sale and subscription products through our platform. You are only limited by Stripes T&C\'s in what you sell'
+        'q': 'How do I get an answer to all my other questions?',
+        'a': 'Please do not hesitate to contact us at acethecfanow@gmail.com'
       }];
 
     $scope.indicies = [];

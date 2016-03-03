@@ -27,6 +27,29 @@
   font-weight: normal
   font-style: normal
 
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../assets/fonts/proximanova-regular-webfont.eot');
+    src: url('../assets/fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('../assets/fonts/proximanova-regular-webfont.ttf') format('truetype'),
+         url('../assets/fonts/proximanova-regular-webfont.svg#proximaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../assets/fonts/proximanova-light-webfont.eot');
+    src: url('../assets/fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/proximanova-light-webfont.woff') format('woff'),
+         url('../assets/fonts/proximanova-light-webfont.ttf') format('truetype'),
+         url('../assets/fonts/proximanova-light-webfont.svg#proximalight') format('svg');
+    font-weight: lighter;
+    font-style: normal;
+
+}
 //
 // App-wide Styles
 //
@@ -84,6 +107,7 @@
 
 // Component styles are injected through grunt
 // injector
+@import 'download/download.styl';
 @import 'faq/faq.styl';
 @import 'main/main.styl';
 @import 'modal/modal.styl';

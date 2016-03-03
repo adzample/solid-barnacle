@@ -1,7 +1,7 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
 <div class="container-fluid">
-  <div class="row-first row">
+  <div class="row-first row" container-id="3" id="3">
     <div class="title-strong">
       <div class="title-top">
         <p id="ace">
@@ -13,23 +13,26 @@
       <p id="byline">
         Get 25 Sample Practice Questions FREE. <img src="../assets/images/cfaman2.png" height="60" alt="">
       </p>
-      <div class="input-group" ng-show="!submitting">
-        <input type="text" focus="true" class="form-control" placeholder="Limited time only. Enter your email">
+      <form name="myForm" ng-submit="sendMail()">
+      <div class="input-group" ng-init="submitting=false" ng-show="!submitting">
+      
+        <input type="email" focus="true" class="form-control" ng-model="userEmail" placeholder="Limited time only. Enter your email" required>
         <span class="input-group-btn">
-          <button class="btn btn-secondary" type="button">Email me them Now!</button>
-        </span>
+          <button class="btn btn-secondary"  type="submit">Email me them Now!</button>          
+        </span>        
       </div>
-    </div> 
-    <div class="boxLoading" ng-show="submitting">
-    </div> 
-    <!-- <button ng-click="submitting=!submitting" ng-init="submitting=false"></button> -->
+      </form>      
+    </div>
+      <span class="error2">{{errorMessage}}</span>
+      <span class="error3">{{sendingMessage}}</span>
     <svg class="arrows">
         <path class="a1" d="M0 0 L30 32 L60 0"></path>
         <path class="a2" d="M0 20 L30 52 L60 20"></path>
         <path class="a3" d="M0 40 L30 72 L60 40"></path>
       </svg> 
     <div class="col-xs-12 row-svg">
-    
+      <div class="boxLoading" ng-show="submitting"></div>
+      <div class="filler-div" ng-show="submitting"></div>
       <svg viewBox="0 0 1280 110" preserveAspectRatio="none" id="curve-shadow">
         <path d="M1280 3.9V110H0C194 71.33 662-19.9 1280 3.9z" />
       </svg>
@@ -50,7 +53,7 @@
         <p class="subtitle-second">
           The best way to be prepared <b>is by doing</b>. AceTheCFA has a huge bank of high quality printable questions. All Questions include comprehensive answers.
         </p>
-        <button>
+        <button scroll-to="3">
           Get Free Questions
         </button>
       </div>
@@ -66,7 +69,7 @@
         <p class="subtitle-second">
           We found the highest correlation of passing graduates were with <b>those who practiced exam technique with similarly styled questions</b>. Questions are updated, refined and reviewed to ensure they are very similar to your examination questions.
         </p>
-        <button>
+        <button scroll-to="3">
           Get Free Questions
         </button>
       </div>
@@ -93,7 +96,7 @@
         <li><strong>25</strong> Answers</li>
         <li><strong>Free</strong> Email Tips</li>
       </ul>
-      <button class="free-button">Get Free Now</button>
+      <button class="free-button" scroll-to="3">Get Free Now</button>
     </div>
 
 
@@ -110,7 +113,7 @@
         <li><strong>Online</strong> Question Randomizer</li>
         <li><strong>Free</strong> Email Tips</li>
       </ul>
-      <button>Purchase Premium Now</button>
+      <button>Premium (Coming Soon)</button>
     </div>
 
     <div class="revealOnScroll" data-animation="fadeIn">
@@ -127,7 +130,7 @@
         <li><strong>Online</strong> Question Bank</li>
         <li><strong>Free</strong> Email Tips</li>
       </ul>
-      <button class="platinum-button">Purchase Platinum Now</button>
+      <button class="platinum-button">Platinum (Coming Soon)</button>
     </div>
     
 
